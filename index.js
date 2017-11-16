@@ -31,7 +31,6 @@ class FixedGuid {
 
   async register () {
     const guid = uuid()
-    await this.redis.hset(this.key, guid, Date.now())
     await this.take(guid)
   }
 
