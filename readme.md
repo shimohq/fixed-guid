@@ -21,9 +21,12 @@ const main = async () => {
 main().catch(console.log)
 ```
 
-`guid` is a uuid, next time you run the script, the guid will be as the same as this one.
-If you have multiple processes, the order of the guids will be almost guaranteed
-if some process will not be run any more, the guid will be deleted after 30min
+## notes
+* `guid` is a uuid, next time you run the script, the guid will be as the same as this one.
+
+* If you have multiple processes, the order of the guids will be almost guaranteed.
+
+* if some process will not be run any more, the guid will be deleted after 30min
 
 # LICENSE
 
